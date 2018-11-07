@@ -1,4 +1,4 @@
 # Automated-Testing-framework
 Automated testing framework based on Python
 
-包含基于selenium的web端测试框架以及基于requests模块的API测试框架
+It includes Web terminal testing framework based on selenium module and API testing framework based on requests module.
