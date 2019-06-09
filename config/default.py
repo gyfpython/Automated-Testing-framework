@@ -3,10 +3,10 @@
 
 class Config():
     ENVIRONMENT = "default"
-    AUTOMATION_PRACTICE_URL = "https://www.baidu.com"
-    AUTOMATION_PRACTICE_URL1 = "http://10.169.110.178:8088/DVWA"
+    AUTOMATION_PRACTICE_URL = "http://localhost:8080"
+    AUTOMATION_PRACTICE_URL1 = "http://localhost:8088/DVWA"
 
 class Prod():
 
     def __init__(self):
-        print ""
+        print ("")
