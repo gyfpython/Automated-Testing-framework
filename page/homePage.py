@@ -5,18 +5,20 @@ import configparser
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
-loginfo = Logger('check.log',level='info')
+#loginfo = Logger('..\log\check.log',level='info')
 
 class HomePage():
     # go to homepage
     def getHomePage(self, driver):
-        loginfo.logger.info("HomePage")
+        #loginfo.logger.info("HomePage")
         try:
             driver.get(url)
             driver.find_element(By.XPATH,body)
-            loginfo.logger.info("success")
+            #loginfo.logger.info("success")
         except Exception as e:
-            loginfo.logger.error(e)
+            print(e)
+            #loginfo.logger.error(e)
+
     # quit
     def quitPage(self, driver):
         driver.quit()
@@ -24,3 +26,5 @@ class HomePage():
 if __name__ == "__main__":
     driver = webdriver.Chrome()
     HomePage().getHomePage(driver)
+    #loginfo.logger.info(driver.title)
+    HomePage().quitPage(driver)
